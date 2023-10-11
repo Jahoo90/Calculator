@@ -1,5 +1,57 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 22px;
+    font-weight: 500;   
+}
+
+body {
+    background-color: bisque;
+}
+
+.calculator {
+    margin: 1.5rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(120px, auto) repeat(5, 4rem);
+}
+
+.screens {
+    background-color: #333533;
+    color: white;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.second-screen {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.main-screen {
+    font-size: 1.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.column-dbl {
+    grid-column: span 2;
+}
+
+.nr {
+    background-color: #e2e3e2ee;
 }
