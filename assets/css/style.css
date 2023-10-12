@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(88, 88, 86);
 }
 
 .calculator {
@@ -53,5 +53,5 @@ button {
 }
 
 .nr {
-    background-color: #e2e3e2ee;
+    background-color: #e8eee872;
 }

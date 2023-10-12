@@ -1,6 +1,6 @@
 console.log("js is on");
 
-let numbers = document.querySelectorAll(".nr")
+let numbers = document.querySelectorAll(".calc-nr")
 let operators = document.querySelectorAll(".operator")
 let clean = document.querySelector(".clean-all")
 let del = document.querySelector(".del")
@@ -21,13 +21,13 @@ const updateScore = () => {
 }
 
 //  2. funkcja dodawania liczb do ekranu
-let addNumber = (nr) => {
-    actualCalculation = actualCalculation.toString() +nr.toString() 
+let addNumber = (calcNr) => {
+    actualCalculation = actualCalculation.toString() + calcNr.toString(); 
 }
 
-numbers.forEach((nr) => {
-    nr.addEventListener('click', () => {
-        addNumber(nr.innerText)
+numbers.forEach((calcNr) => {
+    calcNr.addEventListener("click", () => {
+        addNumber(calcNr.innerText)
         updateScore()
     })
 })
