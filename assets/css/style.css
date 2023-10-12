@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: rgb(88, 88, 86);
+    background-color: rgb(64, 82, 102);
 }
 
 .calculator {
@@ -33,6 +33,7 @@ body {
     padding: 1rem;
     word-wrap: break-word;
     word-break: break-all;
+    border-radius: 5px 5px 0 0;
 }
 
 .second-screen {
@@ -46,6 +47,15 @@ body {
 
 button {
     cursor: pointer;
+    border-radius: 5px;
+}
+button:hover, button:active {
+    background-color: #616561cd;
+    color: #dfe3df;
+}
+
+.btn-make-biger{
+    font-size: 2rem;
 }
 
 .column-dbl {
