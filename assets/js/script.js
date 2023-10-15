@@ -1,4 +1,129 @@
-console.log("js is on");
+console.log("js is ON");
+
+//  1. Tworzenie div .calculator
+let myCalculator = document.createElement("div")
+myCalculator.className = "calculator"
+document.body.appendChild(myCalculator)
+
+//  2. Tworzenie div .screens
+let screens = document.createElement("div")
+screens.className = "screens"
+myCalculator.appendChild(screens)
+
+//  2.1 Tworzenie w  div .screens >>>>> .secondScreen
+let secondScreenDiv = document.createElement("div")
+secondScreenDiv.className = "second-screen"
+secondScreenDiv.innerText = "0700"
+screens.appendChild(secondScreenDiv)
+
+//  2.2 Tworzenie w  div .screens >>>>> .main-screen
+let mainScreenDiv = document.createElement("div")
+mainScreenDiv.className = "main-screen"
+mainScreenDiv.innerText = "11111111111111"
+screens.appendChild(mainScreenDiv)
+
+
+    
+
+
+for ( let i = 1; i <= 18; i++) {
+    let caculatorButton = document.createElement("button")
+    myCalculator.appendChild(caculatorButton);
+    caculatorButton.innerText = i;
+    caculatorButton.className = "calc-nr"
+    switch (i) {
+        
+        case 1: 
+            caculatorButton.className = "clean-all column-dbl";
+            caculatorButton.innerText = "AC";
+            break;
+
+        case 2:            
+            caculatorButton.className = "del";
+            caculatorButton.innerText = "Del";
+            break;
+
+        case 3: 
+            caculatorButton.className = "operator";
+            caculatorButton.innerText = "÷";
+            break;
+
+        case 4:            
+            caculatorButton.innerText = "7";
+            break;
+
+        case 5:            
+            caculatorButton.innerText = "8";
+            break;
+
+        case 6:            
+            caculatorButton.innerText = "9";
+            break;
+
+        case 7:            
+            caculatorButton.className = "operator";
+            caculatorButton.innerText = "x";
+            break;
+
+        case 8:            
+            caculatorButton.className = "calc-nr";
+            caculatorButton.innerText = "4";
+            break;
+
+        case 9:            
+            caculatorButton.innerText = "5";
+            break;
+
+        case 10:            
+            caculatorButton.innerText = "6";
+            break;
+
+        case 11:            
+            caculatorButton.className = "operator";
+            caculatorButton.innerText = "-";
+            break;
+
+        case 12:            
+            caculatorButton.innerText = "1";
+            break;
+
+        case 13:            
+            caculatorButton.innerText = "2";
+            break;
+
+        case 14:            
+            caculatorButton.innerText = "3";
+            break;
+
+        case 15:            
+            caculatorButton.className = "operator";
+            caculatorButton.innerText = "+";
+            break;
+
+        case 16:            
+            caculatorButton.innerText = ",";
+            break;
+
+        case 17:
+            caculatorButton.innerText = "0";
+            break;
+
+        case 18:
+            caculatorButton.className = "equals column-dbl";
+            caculatorButton.innerText = "=";
+            break;
+    
+        default:
+            break;
+    }
+}
+
+
+
+
+
+
+// ----------------------------------------------------
 
 let numbers = document.querySelectorAll(".calc-nr")
 let operators = document.querySelectorAll(".operator")
@@ -141,6 +266,3 @@ clean.addEventListener('click', () => {
     cleanScore()
     updateScore()
 })
-
-
-

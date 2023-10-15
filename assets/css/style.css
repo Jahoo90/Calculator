@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -34,6 +35,9 @@ body {
     word-wrap: break-word;
     word-break: break-all;
     border-radius: 5px 5px 0 0;
+    font-family: 'Calculator', sans-serif;
+    letter-spacing: 3px;
+                                                
 }
 
 .second-screen {
