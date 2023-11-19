@@ -13,13 +13,13 @@ myCalculator.appendChild(screens)
 //  2.1 Tworzenie w  div .screens >>>>> .secondScreen
 let secondScreenDiv = document.createElement("div")
 secondScreenDiv.className = "second-screen"
-secondScreenDiv.innerText = "0700"
+secondScreenDiv.innerText = ""
 screens.appendChild(secondScreenDiv)
 
 //  2.2 Tworzenie w  div .screens >>>>> .main-screen
 let mainScreenDiv = document.createElement("div")
 mainScreenDiv.className = "main-screen"
-mainScreenDiv.innerText = "11111111111111"
+mainScreenDiv.innerText = "0"
 screens.appendChild(mainScreenDiv)
 
 
